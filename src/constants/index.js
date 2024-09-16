@@ -3,38 +3,38 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I'm a Full Stack Developer with expertise in the MERN stack, passionate about creating seamless user experiences and solving real-world problems through technology. Currently pursuing a BS in Computer Science at GCU Lahore, I've completed numerous projects, including social media apps, Doctor Appointment Systems, and more.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I’m a developer who thrives on solving challenges through web technology. With experience in MERN stack development, I've built projects that range from social platforms to real-world applications. I'm always learning and pushing boundaries to improve both my technical skills and the impact of my work. My vision is to create solutions that leave a lasting impression while working toward my long-term financial goals.`;
 
 export const EXPERIENCE = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Apr 2024 -  Jul 2024 (4 mos)",
+    role: "Trainee",
+    company: "Knowledge Streams - Full-time",
+    description: `Developed a Doctor Appointment System and an eCommerce backend while enhancing my skills in full stack development using the MERN stack and PostgreSQL. Gained hands-on experience in building robust applications and managing both frontend and backend operations`,
+    technologies: ["mongoDB", "Express", "React.js", "Node.js", "Postgresql"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "Oct 2022 - Sep 2023  (1 yr)",
+    role: "PR Squad Core Team",
+    company: "GDSC GCU Lahore - Part-time",
+    description: `Led public relations efforts, organizing virtual events via Zoom and Google Meet. Managed communications and outreach through Gmail, enhancing the club's visibility and engagement.`,
+    technologies: ["Zoom", "Google Meet", "Gmail"],
   },
+  // {
+  //   year: "2021 - 2022",
+  //   role: "Full Stack Developer",
+  //   company: "Facebook",
+  //   description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+  //   technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+  // },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "Dec 2021 - Oct 2022 (11 mos)",
+    role: "Stage Team",
+    company: "IEEE GCU Student Branch - Part-time",
+    description: `Supported event coordination, managed stage setup, and handled multimedia presentations using PowerPoint. Maintained event data in Excel and documented plans with Word, enhancing my organizational and teamwork skills.`,
+    technologies: ["PowerPoint", "Excel", "Word"],
   },
 ];
 
@@ -71,6 +71,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Govt. College University Lahore",
-  phoneNo: "+92 3076551205",
-  email: "alishanahmad.ac@gmail.com",
+  phoneNo: "+92 3000000000",
+  email: "xyz@gmail.com",
 };
