@@ -50,8 +50,8 @@ const Navbar = () => {
       >
         {/* Home Link */}
         <motion.li
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: -100, y: 50, opacity: 0 }}
+          whileInView={{ x: 0, y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
           className="text-center mt-3 flex items-center" // Ensure vertical alignment
         >
@@ -90,8 +90,8 @@ const Navbar = () => {
 
         {/* Technologies Link */}
         <motion.li
-          initial={{ y: -50 }}
-          whileInView={{ y: 0 }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className="text-center flex items-center" // Ensure vertical alignment
         >
@@ -110,8 +110,8 @@ const Navbar = () => {
 
         {/* Experience Link */}
         <motion.li
-          initial={{ y: -50 }}
-          whileInView={{ y: 0 }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className="text-center flex items-center" // Ensure vertical alignment
         >
@@ -150,8 +150,8 @@ const Navbar = () => {
 
         {/* Contact Link */}
         <motion.li
-          initial={{ x: 50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: 50, y: 50, opacity: 0 }}
+          whileInView={{ x: 0, y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
           className="text-center flex items-center" // Ensure vertical alignment
         >
