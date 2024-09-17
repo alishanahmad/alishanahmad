@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative mb-20 flex items-center justify-between py-6">
+    <nav className="relative mb-20  flex items-center justify-between py-6">
       {/* Logo */}
       <div className="flex flex-shrink-0 items-center">
         <AnchorLink
@@ -35,30 +35,32 @@ const Navbar = () => {
       </div>
 
       {/* Toggle Icon for mobile */}
-      <div className="nav-icon block md:hidden" onClick={handleToggleIcon}>
+      <div
+        className="nav-icon block md:hidden mb-auto"
+        onClick={handleToggleIcon}
+      >
         {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
       </div>
 
       {/* Navbar Links */}
-
       <ul
-        className={`absolute top-16 left-0 bg-neutral-700 font-bold text-white  rounded-2xl  w-full p-8 transition-transform duration-300 ease-in-out md:static md:flex md:flex-row md:items-center md:justify-center md:gap-4 md:bg-transparent md:p-0 md:transform-none ${
+        className={`flex flex-col space-y-3  absolute top-16 left-0 bg-neutral-700 font-bold text-white rounded-2xl w-full p-8 transition-transform duration-300 ease-in-out md:static md:flex md:flex-row md:items-center md:justify-center md:gap-4 md:bg-transparent md:p-0 md:transform-none ${
           toggleIcon ? "translate-y-0" : "translate-y-[-100vh]"
         }`}
       >
         {/* Home Link */}
         <motion.li
-          initial={{ x: -100, y: 100, opacity: 0 }}
-          whileInView={{ x: 0, y: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="text-center"
+          className="text-center mt-3 flex items-center" // Ensure vertical alignment
         >
           <AnchorLink
             className={`anchor-link ${
               menu === "home"
-                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text  text-2xl tracking-tight text-transparent"
+                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text text-2xl tracking-tight text-transparent"
                 : "text-white"
-            }`} // Active styling
+            }`}
             href="#home"
             onClick={() => setMenu("home")}
           >
@@ -68,15 +70,15 @@ const Navbar = () => {
 
         {/* About Link */}
         <motion.li
-          initial={{ x: -100, y: 0, opacity: 0 }}
-          whileInView={{ x: 0, y: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-center"
+          className="text-center flex items-center" // Ensure vertical alignment
         >
           <AnchorLink
             className={`anchor-link ${
               menu === "about"
-                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text  text-2xl tracking-tight text-transparent"
+                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text text-2xl tracking-tight text-transparent"
                 : "text-white"
             }`}
             href="#about"
@@ -91,12 +93,12 @@ const Navbar = () => {
           initial={{ y: -50 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-center"
+          className="text-center flex items-center" // Ensure vertical alignment
         >
           <AnchorLink
             className={`anchor-link ${
               menu === "technologies"
-                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text  text-2xl tracking-tight text-transparent"
+                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text text-2xl tracking-tight text-transparent"
                 : "text-white"
             }`}
             href="#technologies"
@@ -111,12 +113,12 @@ const Navbar = () => {
           initial={{ y: -50 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="text-center"
+          className="text-center flex items-center" // Ensure vertical alignment
         >
           <AnchorLink
             className={`anchor-link ${
               menu === "experience"
-                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text  text-2xl tracking-tight text-transparent"
+                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text text-2xl tracking-tight text-transparent"
                 : "text-white"
             }`}
             href="#experience"
@@ -128,15 +130,15 @@ const Navbar = () => {
 
         {/* Projects Link */}
         <motion.li
-          initial={{ x: 100, y: 0, opacity: 0 }}
-          whileInView={{ x: 0, y: 0, opacity: 1 }}
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-center"
+          className="text-center flex items-center" // Ensure vertical alignment
         >
           <AnchorLink
             className={`anchor-link ${
               menu === "projects"
-                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text  text-2xl tracking-tight text-transparent"
+                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text text-2xl tracking-tight text-transparent"
                 : "text-white"
             }`}
             href="#projects"
@@ -148,15 +150,15 @@ const Navbar = () => {
 
         {/* Contact Link */}
         <motion.li
-          initial={{ x: 50, y: 50, opacity: 0 }}
-          whileInView={{ x: 0, y: 0, opacity: 1 }}
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="text-center"
+          className="text-center flex items-center" // Ensure vertical alignment
         >
           <AnchorLink
             className={`anchor-link ${
               menu === "contact"
-                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text  text-2xl tracking-tight text-transparent"
+                ? "bg-gradient-to-r from-purple-500 via-slate-500 to-pink-300 bg-clip-text text-2xl tracking-tight text-transparent"
                 : "text-white"
             }`}
             href="#contact"

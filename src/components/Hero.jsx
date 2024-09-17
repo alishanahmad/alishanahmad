@@ -59,7 +59,8 @@ const Hero = () => {
               initial="hidden"
               whileInView="visible"
               src={profilePic}
-              alt="kevin Rush Profile Picture"
+              alt="My Profile Picture"
+              className="rounded-full w-60 h-60 object-cover"
             />
           </div>
         </div>
